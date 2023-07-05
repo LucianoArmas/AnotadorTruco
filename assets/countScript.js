@@ -9,11 +9,13 @@ export function addCount(who){
     const grupoN = document.createElementNS("http://www.w3.org/2000/svg", "g");
     grupoN.setAttribute("id",`${countGroupNos}Nos`);
     contNos.appendChild(grupoN);
+    verifyWinner(countGroupNos, "nos");
   }else if(who === "ellos"){
     countGroupEllos++;
     const grupoE = document.createElementNS("http://www.w3.org/2000/svg", "g");
     grupoE.setAttribute("id",`${countGroupEllos}Ellos`);
     contEllos.appendChild(grupoE);
+    verifyWinner(countGroupEllos, "ellos");
   }
 }
 
@@ -35,5 +37,12 @@ export function substCountEllos(){
     countGroupEllos--
   }else{
     countGroupEllos = 0
+  }
+}
+
+const verifyWinner = (count, who)=>{
+  if(count==30){
+    let audio = new Audio("../sounds/winner.mp3");
+    audio.play();
   }
 }
