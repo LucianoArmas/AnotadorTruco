@@ -18,7 +18,7 @@
         <div>
           <svg class="countNos"></svg>
         </div>
-        <div class="btnsNos">
+        <div class="btnsNos btns">
           <div class="btn-add-nos button-add"><button>+</button></div>
           <div class="btn-substract-nos button-subst"><button>-</button></div>
         </div>
@@ -28,18 +28,24 @@
         <div>
           <svg class="countEllos"></svg>
         </div>
-        <div class="btnsEllos">
+        <div class="btnsEllos bnts">
           <div class="btn-add-ellos button-add"><button>+</button></div>
           <div class="btn-substract-ellos button-subst"><button>-</button></div>
         </div>
       </div>
     </div>
-    <div class="winner-msg-container">
 
+    <div id="popup" class="hidden">
+      <div id="popupContent">
+        <h2 class="msg"></h2>
+        <button id="closeBtn">Cerrar</button>
+      </div>
     </div>
   </div>
 
-<script src="assets/countScript.js"></script>
+<script src="assets/countScript.js" type="module"></script>
 <script src="assets/btnScript.js" type="module"></script>
+<script src="assets/winnerMsg.js" type="module"></script>
+
 </body>
 </html>

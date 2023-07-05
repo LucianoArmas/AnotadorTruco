@@ -1,4 +1,4 @@
-import{addCount, substCountNos, substCountEllos} from './countScript.js';
+import{addCount, substCountEllos, substCountNos} from './countScript.js';
 const btnsAdd = document.getElementsByClassName("button-add");
 const btnsSubst = document.getElementsByClassName("button-subst");
 

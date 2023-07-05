@@ -1,3 +1,4 @@
+import {winMsg} from "./winnerMsg.js";
 const contNos = document.querySelector(".countNos");
 const contEllos = document.querySelector(".countEllos");
 var countGroupNos = 0;
@@ -41,8 +42,11 @@ export function substCountEllos(){
 }
 
 const verifyWinner = (count, who)=>{
-  if(count==30){
+  if(count==5){
     let audio = new Audio("../sounds/winner.mp3");
     audio.play();
+    winMsg(who);
+    countGroupEllos = 0;
+    countGroupNos = 0;
   }
 }
