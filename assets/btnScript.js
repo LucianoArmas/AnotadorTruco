@@ -1,26 +1,29 @@
-import{addCount, substCountEllos, substCountNos} from './countScript.js';
+import{addCount, substCountNos, substCountEllos} from './countScript.js';
 const btnsAdd = document.getElementsByClassName("button-add");
 const btnsSubst = document.getElementsByClassName("button-subst");
+let who = "";
 
 for(let i=0; i< btnsAdd.length; i++){
   btnsAdd[i].addEventListener("click", ()=>{
     if(btnsAdd[i].classList.contains("btn-add-nos")){
-      soundBtnEffect();
-      addCount("nos");
+      who = "nos";
+      // addCount("nos");
     }else{
-      soundBtnEffect();
-      addCount("ellos")
+      who = "ellos";
+      // addCount("ellos")
   }
+  soundBtnEffect();
+  addCount(who);
   })
 }
 
+
 for(let i=0; i< btnsSubst.length; i++){
   btnsSubst[i].addEventListener("click", ()=>{
+    soundBtnEffect();
     if(btnsSubst[i].classList.contains("btn-substract-nos")){
-      soundBtnEffect();
       substCountNos();
     }else if(btnsSubst[i].classList.contains("btn-substract-ellos")){
-      soundBtnEffect();
       substCountEllos()}
   })
 }

@@ -1,28 +1,34 @@
 import {winMsg} from "./winnerMsg.js";
-const contNos = document.querySelector(".countNos");
-const contEllos = document.querySelector(".countEllos");
-var countGroupNos = 0;
-var countGroupEllos = 0;
+const contNos = document.querySelector(".countnos");
+const contEllos = document.querySelector(".countellos");
+let countGroupNos = 0;
+let countGroupEllos = 0;
 
 export function addCount(who){
-  if(who === "nos"){
-    countGroupNos++;
-    const grupoN = document.createElementNS("http://www.w3.org/2000/svg", "g");
-    grupoN.setAttribute("id",`${countGroupNos}Nos`);
-    contNos.appendChild(grupoN);
-    verifyWinner(countGroupNos, "nos");
-  }else if(who === "ellos"){
-    countGroupEllos++;
-    const grupoE = document.createElementNS("http://www.w3.org/2000/svg", "g");
-    grupoE.setAttribute("id",`${countGroupEllos}Ellos`);
-    contEllos.appendChild(grupoE);
-    verifyWinner(countGroupEllos, "ellos");
+  const contG = document.querySelector(`.count${who}`);
+  let count = 0;
+
+  if(who==="nos"){
+    count = ++countGroupNos;
+  }else{
+    count = ++countGroupEllos;
   }
+  const grupo = document.createElementNS("http://www.w3.org/2000/svg", "g");
+  grupo.setAttribute("id",`${count}${who}`);
+  console.log(grupo);
+  console.log(contG);
+  contG.appendChild(grupo);
+  console.log(count);
+
+  verifyWinner(count, who);
+
+
 }
+
 
 export function substCountNos(){
   if(countGroupNos > 0){
-      const grupoN = contNos.getElementById(`${countGroupNos}Nos`);
+      const grupoN = contNos.getElementById(`${countGroupNos}nos`);
       contNos.removeChild(grupoN);
       countGroupNos--
     }else{
@@ -33,7 +39,7 @@ export function substCountNos(){
 
 export function substCountEllos(){
   if(countGroupEllos > 0){
-    const grupoE = contEllos.getElementById(`${countGroupEllos}Ellos`);
+    const grupoE = contEllos.getElementById(`${countGroupEllos}ellos`);
     contEllos.removeChild(grupoE);
     countGroupEllos--
   }else{
