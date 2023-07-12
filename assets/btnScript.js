@@ -7,10 +7,8 @@ for(let i=0; i< btnsAdd.length; i++){
   btnsAdd[i].addEventListener("click", ()=>{
     if(btnsAdd[i].classList.contains("btn-add-nos")){
       who = "nos";
-      // addCount("nos");
     }else{
       who = "ellos";
-      // addCount("ellos")
   }
   soundBtnEffect();
   addCount(who);

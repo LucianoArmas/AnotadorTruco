@@ -6,6 +6,8 @@
   4- App-container
     4.1- Nosotros-container
     4.2- Ellos-container
+    4.3- Stick
+    4.4- Head
   5- Msg Winner
 
 */
@@ -44,17 +46,20 @@ body{
   display: flex;
   justify-content: center;
   text-align: center;
+  max-height: 1000px;
 }
 
+.countnos, .countellos{
+  height: 900px;
+}
 
 /*4.1- Nosotros-container*/
 .nosotros-container{
   background: lightskyblue;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  height: 200px; /* Ajusta la altura según tus necesidades */
+  /* align-items: flex-start; */
+  /* justify-content: center; */
   border: 1px solid black;
 }
 
@@ -75,6 +80,21 @@ body{
 .ellos-container{
   background: lightgreen;
 }
+
+/*4.3- Stick*/
+.match .stick {
+  fill: #ffb624;
+}
+
+
+
+
+/*4.4- Head*/
+
+.match .head {
+  fill: #fc2403;
+}
+
 
 
 /*5- Msg Winner*/
