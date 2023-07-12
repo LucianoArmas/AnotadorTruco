@@ -7,6 +7,7 @@ let flagHeadPosXEllos = 1;
 let auxCont = 0;
 
 export function setPos(cont, who, atributes){
+  console.log("ANTES: "+ flagHeadPosYEllos); //------------------CONSOLE.LOG
   const porcLong = 14/125; /*CREO Q A ESTAS CONST LAS DEBERIA... */
   const porcThick = 1/75;/*...HACER PROPORCIONAL A LA DIMENSION DE LA WEB*/
 
@@ -85,21 +86,11 @@ export function setPos(cont, who, atributes){
     stickW = wCount * porcThick;
     stickX = ((hCount * porcPosX) + stickH/(Math.sqrt(2)) + Math.sqrt(stickH))   +   ((Math.sqrt(stickH) + (stickH + 1)/Math.sqrt(2))* multiPosY);
     stickY = ((hCount * porcPosX) - stickH*(Math.sqrt(2)) - 2*(Math.sqrt(stickH)))   +   ((Math.sqrt(stickH) + (stickH + 1)/Math.sqrt(2)) * multiPosY);
-
-    // stickX = ((hCount * porcPosX) + stickH*0.8) + (stickH * multiPosY/2) + (multiPosY * (hCount/30));
-    // stickY = ((wCount * porcPosY) - stickH*1.1) + (stickH * multiPosY/2) + (multiPosY * (hCount/30));
-    
-    
-    // stickX =  (hCount * porcPosX) + stickH + (Math.sqrt(stickH)) + (stickH * multiPosY/2) + (multiPosY * (hCount/30));
-    // stickY =  (hCount * porcPosX) - stickH - (Math.sqrt(stickH)) + (stickH * multiPosY/2) + (multiPosY * (hCount/30));
     headRadiusXY = porcThick * wCount; 
 
     headX = (stickH + stickH/(Math.sqrt(2)));
     headY = (stickH - 5*stickH/(Math.sqrt(stickH))) + ((stickH * multiPosY) + (multiPosY * (hCount/60)));
 
-    // headX =  hCount * porcPosX + stickH - (Math.sqrt(stickH));
-    // headY =  wCount * porcPosY + (stickH * multiPosY) + (multiPosY * (hCount/60)) + (Math.sqrt(stickH))*2;
-    
     rotation = "rotate(45deg)"
     
     auxCont++
@@ -136,5 +127,42 @@ export function setPos(cont, who, atributes){
     rotation = "rotate(0deg)";
   }
 
+  console.log("DESP: "+ flagHeadPosYEllos); //------------------CONSOLE.LOG
   atributes.push(stickH, stickW, stickX, stickY, headRadiusXY, headX, headY, rotation);
 }
+
+
+
+
+export function resetAux(){
+  auxCont = 0;
+}
+
+
+
+export function resetFlagVerNos(){
+  if(flagHeadPosYNos == -1){
+    flagHeadPosYNos = flagHeadPosYNos * (-1);
+  }
+}
+export function resetFlagHorNos(){
+  if(flagHeadPosXNos == -1){
+    flagHeadPosXNos = flagHeadPosXNos * (-1);
+  }
+}
+export function resetFlagVerEllos(){
+  if(flagHeadPosYEllos == -1){
+    flagHeadPosYEllos = flagHeadPosYEllos * (-1);
+  }
+}
+export function resetFlagHorEllos(){
+  if(flagHeadPosXEllos == -1){
+    flagHeadPosXEllos = flagHeadPosXEllos * (-1);
+  }
+}
+
+/*let flagHeadPosYNos = 1;
+let flagHeadPosXNos = 1;
+
+let flagHeadPosYEllos = 1;
+let flagHeadPosXEllos = 1;*/

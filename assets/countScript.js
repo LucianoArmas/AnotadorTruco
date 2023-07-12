@@ -1,5 +1,5 @@
 import {winMsg} from "./winnerMsg.js";
-import {setPos} from "./positionStickHead.js";
+import {setPos, resetAux, resetFlagVerNos, resetFlagHorNos, resetFlagVerEllos, resetFlagHorEllos} from "./positionStickHead.js";
 const contNos = document.querySelector(".countnos");
 const contEllos = document.querySelector(".countellos");
 let countGroupNos = 0;
@@ -11,8 +11,16 @@ export function addCount(who){
   let atributes = [];
 
   if(who==="nos"){
+    if(countGroupNos==0){
+      resetFlagHorNos();
+      resetFlagVerNos();
+    }
     count = ++countGroupNos;
   }else{
+    if(countGroupEllos==0){
+      resetFlagHorEllos();
+      resetFlagVerEllos();
+    }
     count = ++countGroupEllos;
   }
 
@@ -43,9 +51,7 @@ export function addCount(who){
   grupo.appendChild(head);
   contG.appendChild(grupo);
 
-  // verifyWinner(count, who);
-
-  //stickH, stickW, stickX, stickY, headRadiusXY, headX, headY, rotation
+  verifyWinner(count, who);
 
 }
 
@@ -72,22 +78,25 @@ export function substCountEllos(){
 }
 
 const verifyWinner = (count, who)=>{
-  if(count==30){
+  if(count==5){
     let audio = new Audio("../sounds/winner.mp3");
     audio.play();
     winMsg(who);
-    countGroupEllos = 0;
-    countGroupNos = 0;
-    
-    const elemGNos = contNos.querySelectorAll("g");
-    elemGNos.forEach(g => {
-      g.remove()
-    });
-
-    const elemGEllos = contEllos.querySelectorAll("g");
-    elemGEllos.forEach(g =>{
-      g.remove()
-    });
-    
   }
+}
+
+export function resetCount(){  
+  countGroupEllos = 0;
+  countGroupNos = 0;
+  resetAux();
+  
+  const elemGNos = contNos.querySelectorAll("g");
+  elemGNos.forEach(g => {
+    g.remove()
+  });
+
+  const elemGEllos = contEllos.querySelectorAll("g");
+  elemGEllos.forEach(g =>{
+    g.remove()
+  });
 }

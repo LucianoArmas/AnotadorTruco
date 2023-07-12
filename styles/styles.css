@@ -8,7 +8,9 @@
     4.2- Ellos-container
     4.3- Stick
     4.4- Head
+    4.5- Btns Cont
   5- Msg Winner
+    5.1- Btn Menu
 
 */
 
@@ -58,27 +60,21 @@ body{
   background: lightskyblue;
   display: flex;
   flex-direction: column;
-  /* align-items: flex-start; */
-  /* justify-content: center; */
-  border: 1px solid black;
+  border-right: 1px solid black;
 }
 
-.nosotros-container .btnsNos{
-  background: #000;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  
-}
 
 .nosotros-container h4{
   text-align: center;
 }
 
 
-/*4.1- Ellos-container*/
+/*4.2- Ellos-container*/
 .ellos-container{
   background: lightgreen;
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid black;
 }
 
 /*4.3- Stick*/
@@ -87,13 +83,21 @@ body{
 }
 
 
-
-
 /*4.4- Head*/
 
 .match .head {
   fill: #fc2403;
 }
+
+
+/*4.5- Btns Cont*/
+.btnsCont{ 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 
 
 
@@ -123,4 +127,22 @@ body{
 
 .hidden {
   display: none;
+}
+
+
+
+/*5.1- Btn Menu*/
+#btnMenuContainer{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 24px;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+  z-index: 100;
 }
