@@ -268,6 +268,43 @@ h4{
   fill: #fc2403;
 }
 
+.arriba1, .arriba2, .arriba3, .arriba4, .arriba5, .arriba6{
+  transform: translate(0.5%,0%);
+  -webkit-transform: translate(0.5%,0%);
+  -moz-transform: translate(0.5%,0%);
+  -ms-transform: translate(0.5%,0%);
+  -o-transform: translate(0.5%,0%);
+}
+.der1, .der2, .der3, .der4, .der5, .der6{
+  transform: translate(11%,0.5%);
+  -webkit-transform: translate(11%,0.5%);
+  -moz-transform: translate(11%,0.5%);
+  -ms-transform: translate(11%,0.5%);
+  -o-transform: translate(11%,0.5%);
+}
+.abajo1, .abajo2, .abajo3, .abajo4, .abajo5, .abajo6{
+  transform: translate(0.5%,11%);
+  -webkit-transform: translate(0.5%,11%);
+  -moz-transform: translate(0.5%,11%);
+  -ms-transform: translate(0.5%,11%);
+  -o-transform: translate(0.5%,11%);
+}
+.izq1, .izq2, .izq3, .izq4, .izq5, .izq6{
+  transform: translate(0,0.5%);
+  -webkit-transform: translate(0,0.5%);
+  -moz-transform: translate(0,0.5%);
+  -ms-transform: translate(0,0.5%);
+  -o-transform: translate(0,0.5%);
+}
+.diagonal1, .diagonal2, .diagonal3, .diagonal4, .diagonal5, .diagonal6{
+  transform: translate(0%,0.5%);
+  -webkit-transform: translate(0%,0.5%);
+  -moz-transform: translate(0%,0.5%);
+  -ms-transform: translate(0%,0.5%);
+  -o-transform: translate(0%,0.5%);
+}
+
+
 
 /*4.5- Btns Cont*/
 .btnsCont{ 

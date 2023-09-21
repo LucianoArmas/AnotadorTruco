@@ -61,16 +61,39 @@ export const addPointEllos = (count)=>{
 
 
 export const subsPointNos = (count)=>{
-
+  const grupoN = document.getElementById(`nos${count}`);
+  grupoN.remove();
 }
 
 export const subsPointEllos = (count)=>{
+  const grupoE = document.getElementById(`ellos${count}`);
+  grupoE.remove();
+};
 
-}
+
+export const resetPoints = ()=>{
+  const elemGNos15 = nos15.querySelectorAll("g");
+  elemGNos15.forEach(g => {
+    g.remove()
+  });
+
+  const elemGEllos15 = ellos15.querySelectorAll("g");
+  elemGEllos15.forEach(g =>{
+    g.remove()
+  });
+  const elemGNos30 = nos30.querySelectorAll("g");
+  elemGNos30.forEach(g => {
+    g.remove()
+  });
+
+  const elemGEllos30 = ellos30.querySelectorAll("g");
+  elemGEllos30.forEach(g =>{
+    g.remove()
+  });
+};
 
 
-
-const getPosition = (count)=>{ //MEJORAR ESTO PARA Q DETECTE CUANDO EL CONT ES MAYOR A 15
+const getPosition = (count)=>{
   let positions = [];
 
   if((count>=1 && count<=5)){ 
@@ -214,30 +237,3 @@ const getPosition = (count)=>{ //MEJORAR ESTO PARA Q DETECTE CUANDO EL CONT ES M
   }
   return positions;
 }
-
-
-/*
-  const grupo = document.createElementNS("http://www.w3.org/2000/svg", "g");
-  grupo.setAttribute("id",`${count}${who}`);
-  grupo.classList.add("match");
-
-  const stick = document.createElementNS("http://www.w3.org/2000/svg", "rect");
-  stick.classList.add("stick");
-  
-
-  stick.setAttributeNS(null,"x",(atributes[2]));
-  stick.setAttributeNS(null,"y",(atributes[3]));
-  stick.setAttributeNS(null,"width",(atributes[1]));
-  stick.setAttributeNS(null,"height",(atributes[0]));
-  stick.style.transform = atributes[7];
-
-  const head = document.createElementNS("http://www.w3.org/2000/svg", "ellipse");
-  head.classList.add("head");
-  head.setAttributeNS(null,"cx",(atributes[5]));
-  head.setAttributeNS(null,"cy",(atributes[6]));
-  head.setAttributeNS(null,"rx",(atributes[4]));
-  head.setAttributeNS(null,"ry",(atributes[4]));
-
-  grupo.appendChild(stick);
-  grupo.appendChild(head);
-  contG.appendChild(grupo);*/

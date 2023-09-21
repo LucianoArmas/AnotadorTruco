@@ -1,5 +1,5 @@
 import {winMsg} from "./winnerMsg.js";
-import  {addPointNos, addPointEllos} from "./positionScript.js";
+import  {addPointNos, addPointEllos, subsPointNos, subsPointEllos, resetPoints} from "./positionScript.js";
 
 let contEllos = 0;
 let contNos = 0;
@@ -26,6 +26,7 @@ export const addCountEllos = ()=>{
 
 export const substCountNos = ()=>{
   if(contNos !== 0){
+    subsPointNos(contNos);
     contNos--;
   }else {
     contNos = 0;
@@ -35,6 +36,7 @@ export const substCountNos = ()=>{
 
 export const substCountEllos = ()=>{
   if(contEllos !== 0){
+    subsPointEllos(contEllos);
     contEllos--;
   }else {
     contEllos = 0;
@@ -46,6 +48,7 @@ export const substCountEllos = ()=>{
 export const resetCount =()=>{
   contEllos = 0;
   contNos = 0;
+  resetPoints();
 }
 
 

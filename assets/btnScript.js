@@ -3,29 +3,38 @@ const btnAddNos = document.querySelector(".btn-add-nos");
 const btnSubsNos = document.querySelector(".btn-substract-nos");
 const btnAddEllos = document.querySelector(".btn-add-ellos");
 const btnSubsEllos = document.querySelector(".btn-substract-ellos");
+const popup = document.getElementById("btnMenu");
 
 
 btnAddNos.addEventListener("click",()=>{
-  soundBtnEffect();
-  addCountNos();
+  if(!(popup.classList.contains("popup"))){
+    soundBtnEffect();
+    addCountNos();
+  }
 });
 
 
 btnSubsNos.addEventListener("click",()=>{
-  soundBtnEffect();
-  substCountNos();
+  if(!(popup.classList.contains("popup"))){
+    soundBtnEffect();
+    substCountNos();
+  }
 });
 
 
 btnAddEllos.addEventListener("click",()=>{
-  soundBtnEffect();
-  addCountEllos();
+  if(!(popup.classList.contains("popup"))){
+    soundBtnEffect();
+    addCountEllos();
+  }
 });
 
 
 btnSubsEllos.addEventListener("click",()=>{
-  soundBtnEffect();
-  substCountEllos();
+  if(!(popup.classList.contains("popup"))){
+    soundBtnEffect();
+    substCountEllos();
+  }
 });
 
 

@@ -65,7 +65,7 @@ export function addCount(who){
 export function substCountNos(){
   if(countGroupNos > 0){
       const grupoN = contNos.getElementById(`${countGroupNos}nos`);
-      contNos.removeChild(grupoN); //MEDIO Q SE BUGUE ACON ESTO...PODRIA PROBAR HACERLO CON "grupoN.remove()"
+      contNos.removeChild(grupoN); //MEDIO Q SE BUGUEA CON ESTO...PODRIA PROBAR HACERLO CON "grupoN.remove()"
       console.log("El count vale 1°: " + countGroupNos); // -------------------------CONSOLE LOG
       modFlagsNos(countGroupNos);
       // if((countGroupNos%2)==0){
