@@ -6,9 +6,10 @@
   4- App-container
     4.1- Nosotros-container
     4.2- Ellos-container
-    4.3- Stick
-    4.4- Head
-    4.5- Btns Cont
+    4.3- Groups
+    4.4- Stick
+    4.5- Head
+    4.6- Btns Cont
   5- Msg Winner
     5.1- Btn Menu
   6- Responsive Design
@@ -85,6 +86,7 @@ body{
 
 .nosotros-container, .ellos-container {
   height: 700px;
+  width: 100%;
   background: rgba(139, 139, 139, 0.658);
 }
 
@@ -92,6 +94,7 @@ body{
   display: flex;
   flex-direction: column;
   height: 100%;
+  width: 100%;
 }
 
 .countellos15, .countnos15{
@@ -131,14 +134,14 @@ h4{
   height: 50%;
 }
 
-/*4. -Groups*/
+/*4.3- Groups*/
 .ellos1, .ellos2, .ellos16, .ellos17, .nos1, .nos2, .nos16, .nos17{
   position: relative;
-  transform: translate(45%, 15%);
-  -webkit-transform: translate(45%, 15%);
-  -moz-transform: translate(45%, 15%);
-  -ms-transform: translate(45%, 15%);
-  -o-transform: translate(45%, 15%);
+  transform: translate(40%, 15%);
+  -webkit-transform: translate(40%, 15%);
+  -moz-transform: translate(40%, 15%);
+  -ms-transform: translate(40%, 15%);
+  -o-transform: translate(40%, 15%);
 }
 .ellos3, .ellos18, .nos3, .nos18{
   position: relative;
@@ -150,93 +153,93 @@ h4{
 }
 .ellos4, .ellos19, .nos4, .nos19{
   position: relative;
-  transform: translate(45%,25%);
-  -webkit-transform: translate(45%,25%);
-  -moz-transform: translate(45%,25%);
-  -ms-transform: translate(45%,25%);
-  -o-transform: translate(45%,25%);
+  transform: translate(40%,30%);
+  -webkit-transform: translate(40%,30%);
+  -moz-transform: translate(40%,30%);
+  -ms-transform: translate(40%,30%);
+  -o-transform: translate(40%,30%);
 }
 .ellos5, .ellos20, .nos5, .nos20{
   position: relative;
-  transform: translate(55%,18%);
-  -webkit-transform: translate(55%,17%);
-  -moz-transform: translate(55%,18%);
-  -ms-transform: translate(55%,18%);
-  -o-transform: translate(55%,18%);
+  transform: translate(54%,18%);
+  -webkit-transform: translate(54%,18%);
+  -moz-transform: translate(54%,18%);
+  -ms-transform: translate(54%,18%);
+  -o-transform: translate(54%,18%);
 }
 
 
 
 .ellos6, .ellos7, .ellos21, .ellos22, .nos6, .nos7, .nos21, .nos22{
   position: relative;
-  transform: translate(45%, 30%);
-  -webkit-transform: translate(45%, 30%);
-  -moz-transform: translate(45%, 30%);
-  -ms-transform: translate(45%, 30%);
-  -o-transform: translate(45%, 30%);
+  transform: translate(40%, 35%);
+  -webkit-transform: translate(40%, 35%);
+  -moz-transform: translate(40%, 35%);
+  -ms-transform: translate(40%, 35%);
+  -o-transform: translate(40%, 35%);
 }
 .ellos8, .ellos23, .nos8, .nos23{
   position: relative;
-  transform: translate(55%,30%);
-  -webkit-transform: translate(55%,30%);
-  -moz-transform: translate(55%,30%);
-  -ms-transform: translate(55%,30%);
-  -o-transform: translate(55%,30%);
+  transform: translate(55%,35%);
+  -webkit-transform: translate(55%,35%);
+  -moz-transform: translate(55%,35%);
+  -ms-transform: translate(55%,35%);
+  -o-transform: translate(55%,35%);
 }
 .ellos9, .ellos24, .nos9, .nos24{
   position: relative;
-  transform: translate(45%,40%);
-  -webkit-transform: translate(45%,40%);
-  -moz-transform: translate(45%,40%);
-  -ms-transform: translate(45%,40%);
-  -o-transform: translate(45%,40%);
+  transform: translate(40%,50%);
+  -webkit-transform: translate(40%,50%);
+  -moz-transform: translate(40%,50%);
+  -ms-transform: translate(40%,50%);
+  -o-transform: translate(40%,50%);
 }
 .ellos10, .ellos25, .nos10, .nos25{
   position: relative;
-  transform: translate(55%,32%);
-  -webkit-transform: translate(55%,32%);
-  -moz-transform: translate(55%,32%);
-  -ms-transform: translate(55%,32%);
-  -o-transform: translate(55%,32%);
+  transform: translate(54%,38%);
+  -webkit-transform: translate(54%,38%);
+  -moz-transform: translate(54%,38%);
+  -ms-transform: translate(54%,38%);
+  -o-transform: translate(54%,38%);
 }
 
 
 .ellos11, .ellos12, .ellos26, .ellos27, .nos11, .nos12, .nos26, .nos27{
   position: relative;
-  transform: translate(45%, 45%);
-  -webkit-transform: translate(45%, 45%);
-  -moz-transform: translate(45%, 45%);
-  -ms-transform: translate(45%, 45%);
-  -o-transform: translate(45%, 45%);
+  transform: translate(40%, 55%);
+  -webkit-transform: translate(40%, 55%);
+  -moz-transform: translate(40%, 55%);
+  -ms-transform: translate(40%, 55%);
+  -o-transform: translate(40%, 55%);
 }
 .ellos13, .ellos28, .nos13, .nos28{
   position: relative;
-  transform: translate(55%,45%);
-  -webkit-transform: translate(55%,45%);
-  -moz-transform: translate(55%,45%);
-  -ms-transform: translate(55%,45%);
-  -o-transform: translate(55%,45%);
+  transform: translate(55%,55%);
+  -webkit-transform: translate(55%,55%);
+  -moz-transform: translate(55%,55%);
+  -ms-transform: translate(55%,55%);
+  -o-transform: translate(55%,55%);
 }
 .ellos14, .ellos29, .nos14, .nos29{
   position: relative;
-  transform: translate(45%,55%);
-  -webkit-transform: translate(45%,55%);
-  -moz-transform: translate(45%,55%);
-  -ms-transform: translate(45%,55%);
-  -o-transform: translate(45%,55%);
+  transform: translate(40%,70%);
+  -webkit-transform: translate(40%,70%);
+  -moz-transform: translate(40%,70%);
+  -ms-transform: translate(40%,70%);
+  -o-transform: translate(40%,70%);
 }
 .ellos15, .ellos30, .nos15, .nos30{
   position: relative;
-  transform: translate(55%,47%);
-  -webkit-transform: translate(55%,47%);
-  -moz-transform: translate(55%,47%);
-  -ms-transform: translate(55%,47%);
-  -o-transform: translate(55%,47%);
+  transform: translate(54%,58%);
+  -webkit-transform: translate(54%,58%);
+  -moz-transform: translate(54%,58%);
+  -ms-transform: translate(54%,58%);
+  -o-transform: translate(54%,58%);
 }
 
 
 
-/*4.3- Stick*/
+/*4.4- Stick*/
 .match .stick {
   fill: #ffb624;
 }
@@ -244,25 +247,25 @@ h4{
 
 .horizontal1, .horizontal3, .horizontal5, .horizontal2, .horizontal4, .horizontal6{
   position: absolute;
-  width: 2rem;
+  width: 3rem;
   height: 0.2rem;
 }
 
 .vertical1, .vertical3, .vertical5, .vertical2, .vertical4, .vertical6{
   position: absolute;
-  height: 2rem;
+  height: 3rem;
   width: 0.2rem;
 }
 
 .diagonal1, .diagonal2, .diagonal3, .diagonal4, .diagonal5, .diagonal6{
   position: absolute;
-  width: 2rem;
+  width: 3rem;
   height: 0.2rem;
   rotate: 135deg;
 }
 
 
-/*4.4- Head*/
+/*4.5- Head*/
 
 .match .head {
   fill: #fc2403;
@@ -276,18 +279,18 @@ h4{
   -o-transform: translate(0.5%,0%);
 }
 .der1, .der2, .der3, .der4, .der5, .der6{
-  transform: translate(11%,0.5%);
-  -webkit-transform: translate(11%,0.5%);
-  -moz-transform: translate(11%,0.5%);
-  -ms-transform: translate(11%,0.5%);
-  -o-transform: translate(11%,0.5%);
+  transform: translate(15%,0.5%);
+  -webkit-transform: translate(15%,0.5%);
+  -moz-transform: translate(15%,0.5%);
+  -ms-transform: translate(15%,0.5%);
+  -o-transform: translate(15%,0.5%);
 }
 .abajo1, .abajo2, .abajo3, .abajo4, .abajo5, .abajo6{
-  transform: translate(0.5%,11%);
-  -webkit-transform: translate(0.5%,11%);
-  -moz-transform: translate(0.5%,11%);
-  -ms-transform: translate(0.5%,11%);
-  -o-transform: translate(0.5%,11%);
+  transform: translate(0.5%,15%);
+  -webkit-transform: translate(0.5%,15%);
+  -moz-transform: translate(0.5%,15%);
+  -ms-transform: translate(0.5%,15%);
+  -o-transform: translate(0.5%,15%);
 }
 .izq1, .izq2, .izq3, .izq4, .izq5, .izq6{
   transform: translate(0,0.5%);
@@ -306,7 +309,7 @@ h4{
 
 
 
-/*4.5- Btns Cont*/
+/*4.6- Btns Cont*/
 .btnsCont{ 
   display: flex;
   flex-direction: column;
@@ -459,10 +462,10 @@ h4{
 
 
 /*6- Responsive Design*/
-@media screen and (max-width: 420px){
+@media screen and (max-width: 900px){
   .container{
-    max-width: 300px;
-    max-height: 800px;
+    width: 700px;
+    max-height: 700px;
   }
 
   .head-container{
@@ -476,11 +479,17 @@ h4{
   }
 
   .app-container{
-    max-height: 700px;
+    height: 650px;
+    width: 100%;
+  }
+
+  .nosotros-container, .ellos-container{
+    height: 100%;
+    width: 100%;
   }
 
   .countnos, .countellos{
-    max-width: 110px;
+    width: 100%;
   }
 
   .btnsNos button{
@@ -506,6 +515,548 @@ h4{
 }
 
 
+@media screen and (max-width: 800px){
+  .container{
+    position: relative;
+    width: 500px;
+    max-height: 700px;
+  }
+
+  .head-container{
+    height: 20px;
+    font-size: 10px;
+    margin-top: 10px;
+  }
+
+  .head-container img{
+    height: 50px;
+  }
+
+  .app-container{
+    height: 650px;
+    width: 100%;
+  }
+
+  .nosotros-container, .ellos-container{
+    height: 100%;
+    width: 45%;
+  }
+
+  .countnos, .countellos{
+    width: 100%;
+  }
+
+  .btnsNos button{
+    margin-right: 5px;
+  }
+  
+  .btnsEllos button{
+    margin-left:  5px;
+  }
+  
+  h4{
+    font-size: 15px;
+  }
+
+  .btnsCont button{
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: 500;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+    border: 1.8px solid white;
+  }
+  
+
+  .ellos3, .ellos18, .nos3, .nos18{
+    position: relative;
+    transform: translate(60%,15%);
+    -webkit-transform: translate(60%,15%);
+    -moz-transform: translate(60%,15%);
+    -ms-transform: translate(60%,15%);
+    -o-transform: translate(60%,15%);
+}
+  .ellos5, .ellos20, .nos5, .nos20{
+    position: relative;
+    transform: translate(58%,18%);
+    -webkit-transform: translate(58%,18%);
+    -moz-transform: translate(58%,18%);
+    -ms-transform: translate(58%,18%);
+    -o-transform: translate(58%,18%);
+}
+  .ellos8, .ellos23, .nos8, .nos23{
+    position: relative;
+    transform: translate(60%,35%);
+    -webkit-transform: translate(60%,35%);
+    -moz-transform: translate(60%,35%);
+    -ms-transform: translate(60%,35%);
+    -o-transform: translate(60%,35%);
+}
+  .ellos10, .ellos25, .nos10, .nos25{
+    position: relative;
+    transform: translate(58%,38%);
+    -webkit-transform: translate(58%,38%);
+    -moz-transform: translate(58%,38%);
+    -ms-transform: translate(58%,38%);
+    -o-transform: translate(58%,38%);
+}
+  .ellos13, .ellos28, .nos13, .nos28{
+    position: relative;
+    transform: translate(60%,55%);
+    -webkit-transform: translate(60%,55%);
+    -moz-transform: translate(60%,55%);
+    -ms-transform: translate(60%,55%);
+    -o-transform: translate(60%,55%);
+}
+  .ellos15, .ellos30, .nos15, .nos30{
+    position: relative;
+    transform: translate(58%,58%);
+    -webkit-transform: translate(58%,58%);
+    -moz-transform: translate(58%,58%);
+    -ms-transform: translate(58%,58%);
+    -o-transform: translate(58%,58%);
+}
+.der1, .der2, .der3, .der4, .der5, .der6{
+  transform: translate(20%,0.5%);
+  -webkit-transform: translate(20%,0.5%);
+  -moz-transform: translate(20%,0.5%);
+  -ms-transform: translate(20%,0.5%);
+  -o-transform: translate(20%,0.5%);
+}
+
+}
 
 
+
+
+@media screen and (max-width: 600px){
+  .container{
+    position: relative;
+    width: 500px;
+    max-height: 700px;
+  }
+
+  .head-container{
+    height: 20px;
+    font-size: 10px;
+    margin-top: 10px;
+  }
+
+  .head-container img{
+    height: 50px;
+  }
+
+  .app-container{
+    height: 650px;
+    width: 100%;
+  }
+
+  .nosotros-container, .ellos-container{
+    height: 100%;
+    width: 45%;
+  }
+
+  .countnos, .countellos{
+    width: 100%;
+  }
+
+  .btnsNos button{
+    margin-right: 5px;
+  }
+  
+  .btnsEllos button{
+    margin-left:  5px;
+  }
+  
+  h4{
+    font-size: 15px;
+  }
+
+  .btnsCont button{
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: 500;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+    border: 1.8px solid white;
+  }
+  
+
+  .ellos3, .ellos18, .nos3, .nos18{
+    position: relative;
+    transform: translate(60%,15%);
+    -webkit-transform: translate(60%,15%);
+    -moz-transform: translate(60%,15%);
+    -ms-transform: translate(60%,15%);
+    -o-transform: translate(60%,15%);
+}
+  .ellos5, .ellos20, .nos5, .nos20{
+    position: relative;
+    transform: translate(58%,18%);
+    -webkit-transform: translate(58%,18%);
+    -moz-transform: translate(58%,18%);
+    -ms-transform: translate(58%,18%);
+    -o-transform: translate(58%,18%);
+}
+  .ellos8, .ellos23, .nos8, .nos23{
+    position: relative;
+    transform: translate(60%,35%);
+    -webkit-transform: translate(60%,35%);
+    -moz-transform: translate(60%,35%);
+    -ms-transform: translate(60%,35%);
+    -o-transform: translate(60%,35%);
+}
+  .ellos10, .ellos25, .nos10, .nos25{
+    position: relative;
+    transform: translate(58%,38%);
+    -webkit-transform: translate(58%,38%);
+    -moz-transform: translate(58%,38%);
+    -ms-transform: translate(58%,38%);
+    -o-transform: translate(58%,38%);
+}
+  .ellos13, .ellos28, .nos13, .nos28{
+    position: relative;
+    transform: translate(60%,55%);
+    -webkit-transform: translate(60%,55%);
+    -moz-transform: translate(60%,55%);
+    -ms-transform: translate(60%,55%);
+    -o-transform: translate(60%,55%);
+}
+  .ellos15, .ellos30, .nos15, .nos30{
+    position: relative;
+    transform: translate(58%,58%);
+    -webkit-transform: translate(58%,58%);
+    -moz-transform: translate(58%,58%);
+    -ms-transform: translate(58%,58%);
+    -o-transform: translate(58%,58%);
+}
+.der1, .der2, .der3, .der4, .der5, .der6{
+  transform: translate(20%,0.5%);
+  -webkit-transform: translate(20%,0.5%);
+  -moz-transform: translate(20%,0.5%);
+  -ms-transform: translate(20%,0.5%);
+  -o-transform: translate(20%,0.5%);
+}
+}
+
+
+
+
+@media screen and (max-width: 520px){
+  .container{
+    position: relative;
+    width: 400px;
+    max-height: 700px;
+  }
+
+  .head-container{
+    height: 20px;
+    font-size: 10px;
+    margin-top: 10px;
+  }
+
+  .head-container img{
+    height: 50px;
+  }
+
+  .app-container{
+    height: 650px;
+    width: 100%;
+  }
+
+  .nosotros-container, .ellos-container{
+    height: 100%;
+    width: 45%;
+  }
+
+  .countnos, .countellos{
+    width: 100%;
+  }
+
+  .btnsNos button{
+    margin-right: 5px;
+  }
+  
+  .btnsEllos button{
+    margin-left:  5px;
+  }
+  
+  h4{
+    font-size: 15px;
+  }
+
+  .btnsCont button{
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: 500;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+    border: 1.8px solid white;
+  }
+  
+
+  .ellos3, .ellos18, .nos3, .nos18{
+    position: relative;
+    transform: translate(65%,15%);
+    -webkit-transform: translate(65%,15%);
+    -moz-transform: translate(65%,15%);
+    -ms-transform: translate(65%,15%);
+    -o-transform: translate(65%,15%);
+}
+  .ellos5, .ellos20, .nos5, .nos20{
+    position: relative;
+    transform: translate(63%,18%);
+    -webkit-transform: translate(63%,18%);
+    -moz-transform: translate(63%,18%);
+    -ms-transform: translate(63%,18%);
+    -o-transform: translate(63%,18%);
+}
+  .ellos8, .ellos23, .nos8, .nos23{
+    position: relative;
+    transform: translate(65%,35%);
+    -webkit-transform: translate(65%,35%);
+    -moz-transform: translate(65%,35%);
+    -ms-transform: translate(65%,35%);
+    -o-transform: translate(65%,35%);
+}
+  .ellos10, .ellos25, .nos10, .nos25{
+    position: relative;
+    transform: translate(63%,38%);
+    -webkit-transform: translate(63%,38%);
+    -moz-transform: translate(63%,38%);
+    -ms-transform: translate(63%,38%);
+    -o-transform: translate(63%,38%);
+}
+  .ellos13, .ellos28, .nos13, .nos28{
+    position: relative;
+    transform: translate(65%,55%);
+    -webkit-transform: translate(65%,55%);
+    -moz-transform: translate(65%,55%);
+    -ms-transform: translate(65%,55%);
+    -o-transform: translate(65%,55%);
+}
+  .ellos15, .ellos30, .nos15, .nos30{
+    position: relative;
+    transform: translate(63%,58%);
+    -webkit-transform: translate(63%,58%);
+    -moz-transform: translate(63%,58%);
+    -ms-transform: translate(63%,58%);
+    -o-transform: translate(63%,58%);
+}
+.der1, .der2, .der3, .der4, .der5, .der6{
+  transform: translate(25%,0.5%);
+  -webkit-transform: translate(25%,0.5%);
+  -moz-transform: translate(25%,0.5%);
+  -ms-transform: translate(25%,0.5%);
+  -o-transform: translate(25%,0.5%);
+}
+}
+
+
+
+@media screen and (max-width: 450px){
+  .container{
+    position: relative;
+    width: 300px;
+    max-height: 600px;
+  }
+
+  .head-container{
+    height: 20px;
+    font-size: 10px;
+    margin-top: 10px;
+  }
+
+  .head-container img{
+    height: 50px;
+  }
+
+  .app-container{
+    height: 550px;
+    width: 100%;
+  }
+
+  .nosotros-container, .ellos-container{
+    height: 100%;
+    width: 45%;
+  }
+
+  .countnos, .countellos{
+    width: 100%;
+  }
+
+  .btnsNos button{
+    margin-right: 5px;
+  }
+  
+  .btnsEllos button{
+    margin-left:  5px;
+  }
+  
+  h4{
+    font-size: 15px;
+  }
+
+  .btnsCont button{
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    font-size: 15px;
+    font-weight: 500;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+    border: 1.8px solid white;
+  }
+  
+
+  .ellos1, .ellos2, .ellos16, .ellos17, .nos1, .nos2, .nos16, .nos17{
+    position: relative;
+    transform: translate(30%, 15%);
+    -webkit-transform: translate(30%, 15%);
+    -moz-transform: translate(30%, 15%);
+    -ms-transform: translate(30%, 15%);
+    -o-transform: translate(30%, 15%);
+}
+  .ellos3, .ellos18, .nos3, .nos18{
+    position: relative;
+    transform: translate(65%,15%);
+    -webkit-transform: translate(65%,15%);
+    -moz-transform: translate(65%,15%);
+    -ms-transform: translate(65%,15%);
+    -o-transform: translate(65%,15%);
+}
+  .ellos4, .ellos19, .nos4, .nos19{
+    position: relative;
+    transform: translate(32%,35%);
+    -webkit-transform: translate(32%,35%);
+    -moz-transform: translate(32%,35%);
+    -ms-transform: translate(32%,35%);
+    -o-transform: translate(32%,35%);
+}
+  .ellos5, .ellos20, .nos5, .nos20{
+    position: relative;
+    transform: translate(62%,20%);
+    -webkit-transform: translate(62%,20%);
+    -moz-transform: translate(62%,20%);
+    -ms-transform: translate(62%,20%);
+    -o-transform: translate(62%,20%);
+}
+  
+  
+  
+  .ellos6, .ellos7, .ellos21, .ellos22, .nos6, .nos7, .nos21, .nos22{
+    position: relative;
+    transform: translate(30%, 40%);
+    -webkit-transform: translate(30%, 40%);
+    -moz-transform: translate(30%, 40%);
+    -ms-transform: translate(30%, 40%);
+    -o-transform: translate(30%, 40%);
+}
+  .ellos8, .ellos23, .nos8, .nos23{
+    position: relative;
+    transform: translate(65%,40%);
+    -webkit-transform: translate(65%,40%);
+    -moz-transform: translate(65%,40%);
+    -ms-transform: translate(65%,40%);
+    -o-transform: translate(65%,40%);
+}
+  .ellos9, .ellos24, .nos9, .nos24{
+    position: relative;
+    transform: translate(32%,60%);
+    -webkit-transform: translate(32%,60%);
+    -moz-transform: translate(32%,60%);
+    -ms-transform: translate(32%,60%);
+    -o-transform: translate(32%,60%);
+}
+  .ellos10, .ellos25, .nos10, .nos25{
+    position: relative;
+    transform: translate(62%,45%);
+    -webkit-transform: translate(62%,45%);
+    -moz-transform: translate(62%,45%);
+    -ms-transform: translate(62%,45%);
+    -o-transform: translate(62%,45%);
+}
+  
+  
+  .ellos11, .ellos12, .ellos26, .ellos27, .nos11, .nos12, .nos26, .nos27{
+    position: relative;
+    transform: translate(30%, 65%);
+    -webkit-transform: translate(30%, 65%);
+    -moz-transform: translate(30%, 65%);
+    -ms-transform: translate(30%, 65%);
+    -o-transform: translate(30%, 65%);
+}
+  .ellos13, .ellos28, .nos13, .nos28{
+    position: relative;
+    transform: translate(65%,65%);
+    -webkit-transform: translate(65%,65%);
+    -moz-transform: translate(65%,65%);
+    -ms-transform: translate(65%,65%);
+    -o-transform: translate(65%,65%);
+}
+  .ellos14, .ellos29, .nos14, .nos29{
+    position: relative;
+    transform: translate(32%,85%);
+    -webkit-transform: translate(32%,85%);
+    -moz-transform: translate(32%,85%);
+    -ms-transform: translate(32%,85%);
+    -o-transform: translate(32%,85%);
+}
+  .ellos15, .ellos30, .nos15, .nos30{
+    position: relative;
+    transform: translate(62%,70%);
+    -webkit-transform: translate(62%,70%);
+    -moz-transform: translate(62%,70%);
+    -ms-transform: translate(62%,70%);
+    -o-transform: translate(62%,70%);
+}
+  
+
+
+  .arriba1, .arriba2, .arriba3, .arriba4, .arriba5, .arriba6{
+    transform: translate(1%,0%);
+    -webkit-transform: translate(1%,0%);
+    -moz-transform: translate(1%,0%);
+    -ms-transform: translate(1%,0%);
+    -o-transform: translate(1%,0%);
+}
+  .der1, .der2, .der3, .der4, .der5, .der6{
+    transform: translate(35%,0.5%);
+    -webkit-transform: translate(35%,0.5%);
+    -moz-transform: translate(35%,0.5%);
+    -ms-transform: translate(35%,0.5%);
+    -o-transform: translate(35%,0.5%);
+}
+  .abajo1, .abajo2, .abajo3, .abajo4, .abajo5, .abajo6{
+    transform: translate(0.5%,20%);
+    -webkit-transform: translate(0.5%,20%);
+    -moz-transform: translate(0.5%,20%);
+    -ms-transform: translate(0.5%,20%);
+    -o-transform: translate(0.5%,20%);
+}
+  .izq1, .izq2, .izq3, .izq4, .izq5, .izq6{
+    transform: translate(0,0.5%);
+    -webkit-transform: translate(0,0.5%);
+    -moz-transform: translate(0,0.5%);
+    -ms-transform: translate(0,0.5%);
+    -o-transform: translate(0,0.5%);
+  }
+  .diagonal1, .diagonal2, .diagonal3, .diagonal4, .diagonal5, .diagonal6{
+    transform: translate(0%,0.5%);
+    -webkit-transform: translate(0%,0.5%);
+    -moz-transform: translate(0%,0.5%);
+    -ms-transform: translate(0%,0.5%);
+    -o-transform: translate(0%,0.5%);
+  }
+}
 
