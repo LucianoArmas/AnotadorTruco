@@ -1,32 +1,35 @@
-import{addCount, substCountNos, substCountEllos} from './countScript.js';
-const btnsAdd = document.getElementsByClassName("button-add");
-const btnsSubst = document.getElementsByClassName("button-subst");
-let who = "";
+import{addCountNos, addCountEllos, substCountNos, substCountEllos} from './countScript.js';
+const btnAddNos = document.querySelector(".btn-add-nos");
+const btnSubsNos = document.querySelector(".btn-substract-nos");
+const btnAddEllos = document.querySelector(".btn-add-ellos");
+const btnSubsEllos = document.querySelector(".btn-substract-ellos");
 
-for(let i=0; i< btnsAdd.length; i++){
-  btnsAdd[i].addEventListener("click", ()=>{
-    if(btnsAdd[i].classList.contains("btn-add-nos")){
-      who = "nos";
-    }else{
-      who = "ellos";
-  }
+
+btnAddNos.addEventListener("click",()=>{
   soundBtnEffect();
-  addCount(who);
-  })
-}
+  addCountNos();
+});
 
 
-for(let i=0; i< btnsSubst.length; i++){
-  btnsSubst[i].addEventListener("click", ()=>{
-    soundBtnEffect();
-    if(btnsSubst[i].classList.contains("btn-substract-nos")){
-      substCountNos();
-    }else if(btnsSubst[i].classList.contains("btn-substract-ellos")){
-      substCountEllos()}
-  })
-}
+btnSubsNos.addEventListener("click",()=>{
+  soundBtnEffect();
+  substCountNos();
+});
 
-function soundBtnEffect(){
+
+btnAddEllos.addEventListener("click",()=>{
+  soundBtnEffect();
+  addCountEllos();
+});
+
+
+btnSubsEllos.addEventListener("click",()=>{
+  soundBtnEffect();
+  substCountEllos();
+});
+
+
+const soundBtnEffect=()=>{
   let audio = new Audio("../sounds/boton.mp3");
   audio.play();
 }

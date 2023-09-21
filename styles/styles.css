@@ -11,10 +11,17 @@
     4.5- Btns Cont
   5- Msg Winner
     5.1- Btn Menu
+  6- Responsive Design
 
 */
 
+
+
 /*1- Gral*/
+*{
+  font-family: "kanit-med";
+}
+
 body{
   display: flex;
   justify-content: center;
@@ -27,59 +34,231 @@ body{
 }
 
 
+
+
 /*2- Container*/
 .container{
   background: #e5e5e5;
-  padding: 50px;
-  margin: 20px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin: 5px;
 }
+
+
+
 
 /*3- Head-container*/
 .head-container{
+  position: relative;
   text-align: center;
   font-size: 20px;
   font-family: "kanit-med";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
 }
+
+.head-container h2{ 
+  position: absolute;
+}
+
+.head-container img{
+  height: 100px;
+  opacity: 0.2;
+}
+
+
+
+
 
 
 /*4- App-container*/
 .app-container{
-  background: grey;
   display: flex;
   justify-content: center;
   text-align: center;
-  max-height: 1000px;
+  max-height: 900px;
+}
+
+.nosotros-container, .ellos-container {
+  height: 700px;
+  background: rgba(139, 139, 139, 0.658);
 }
 
 .countnos, .countellos{
-  height: 900px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
+
+.countellos15, .countnos15{
+  position: relative;
+  border-bottom: 1px solid black;
+  border-top: 1px solid rgba(124, 123, 123, 0.7);
+}
+
 
 /*4.1- Nosotros-container*/
 .nosotros-container{
-  background: lightskyblue;
   display: flex;
   flex-direction: column;
   border-right: 1px solid black;
 }
 
 
-.nosotros-container h4{
+h4{
   text-align: center;
+  font-size: 20px;
+  font-family: "kanit-med";
+}
+
+.countnos svg{
+  height: 50%;
 }
 
 
 /*4.2- Ellos-container*/
 .ellos-container{
-  background: lightgreen;
   display: flex;
   flex-direction: column;
   border-left: 1px solid black;
 }
 
+.countellos svg{
+  height: 50%;
+}
+
+/*4. -Groups*/
+.ellos1, .ellos2, .ellos16, .ellos17, .nos1, .nos2, .nos16, .nos17{
+  position: relative;
+  transform: translate(45%, 15%);
+  -webkit-transform: translate(45%, 15%);
+  -moz-transform: translate(45%, 15%);
+  -ms-transform: translate(45%, 15%);
+  -o-transform: translate(45%, 15%);
+}
+.ellos3, .ellos18, .nos3, .nos18{
+  position: relative;
+  transform: translate(55%,15%);
+  -webkit-transform: translate(55%,15%);
+  -moz-transform: translate(55%,15%);
+  -ms-transform: translate(55%,15%);
+  -o-transform: translate(55%,15%);
+}
+.ellos4, .ellos19, .nos4, .nos19{
+  position: relative;
+  transform: translate(45%,25%);
+  -webkit-transform: translate(45%,25%);
+  -moz-transform: translate(45%,25%);
+  -ms-transform: translate(45%,25%);
+  -o-transform: translate(45%,25%);
+}
+.ellos5, .ellos20, .nos5, .nos20{
+  position: relative;
+  transform: translate(55%,18%);
+  -webkit-transform: translate(55%,17%);
+  -moz-transform: translate(55%,18%);
+  -ms-transform: translate(55%,18%);
+  -o-transform: translate(55%,18%);
+}
+
+
+
+.ellos6, .ellos7, .ellos21, .ellos22, .nos6, .nos7, .nos21, .nos22{
+  position: relative;
+  transform: translate(45%, 30%);
+  -webkit-transform: translate(45%, 30%);
+  -moz-transform: translate(45%, 30%);
+  -ms-transform: translate(45%, 30%);
+  -o-transform: translate(45%, 30%);
+}
+.ellos8, .ellos23, .nos8, .nos23{
+  position: relative;
+  transform: translate(55%,30%);
+  -webkit-transform: translate(55%,30%);
+  -moz-transform: translate(55%,30%);
+  -ms-transform: translate(55%,30%);
+  -o-transform: translate(55%,30%);
+}
+.ellos9, .ellos24, .nos9, .nos24{
+  position: relative;
+  transform: translate(45%,40%);
+  -webkit-transform: translate(45%,40%);
+  -moz-transform: translate(45%,40%);
+  -ms-transform: translate(45%,40%);
+  -o-transform: translate(45%,40%);
+}
+.ellos10, .ellos25, .nos10, .nos25{
+  position: relative;
+  transform: translate(55%,32%);
+  -webkit-transform: translate(55%,32%);
+  -moz-transform: translate(55%,32%);
+  -ms-transform: translate(55%,32%);
+  -o-transform: translate(55%,32%);
+}
+
+
+.ellos11, .ellos12, .ellos26, .ellos27, .nos11, .nos12, .nos26, .nos27{
+  position: relative;
+  transform: translate(45%, 45%);
+  -webkit-transform: translate(45%, 45%);
+  -moz-transform: translate(45%, 45%);
+  -ms-transform: translate(45%, 45%);
+  -o-transform: translate(45%, 45%);
+}
+.ellos13, .ellos28, .nos13, .nos28{
+  position: relative;
+  transform: translate(55%,45%);
+  -webkit-transform: translate(55%,45%);
+  -moz-transform: translate(55%,45%);
+  -ms-transform: translate(55%,45%);
+  -o-transform: translate(55%,45%);
+}
+.ellos14, .ellos29, .nos14, .nos29{
+  position: relative;
+  transform: translate(45%,55%);
+  -webkit-transform: translate(45%,55%);
+  -moz-transform: translate(45%,55%);
+  -ms-transform: translate(45%,55%);
+  -o-transform: translate(45%,55%);
+}
+.ellos15, .ellos30, .nos15, .nos30{
+  position: relative;
+  transform: translate(55%,47%);
+  -webkit-transform: translate(55%,47%);
+  -moz-transform: translate(55%,47%);
+  -ms-transform: translate(55%,47%);
+  -o-transform: translate(55%,47%);
+}
+
+
+
 /*4.3- Stick*/
 .match .stick {
   fill: #ffb624;
+}
+
+
+.horizontal1, .horizontal3, .horizontal5, .horizontal2, .horizontal4, .horizontal6{
+  position: absolute;
+  width: 2rem;
+  height: 0.2rem;
+}
+
+.vertical1, .vertical3, .vertical5, .vertical2, .vertical4, .vertical6{
+  position: absolute;
+  height: 2rem;
+  width: 0.2rem;
+}
+
+.diagonal1, .diagonal2, .diagonal3, .diagonal4, .diagonal5, .diagonal6{
+  position: absolute;
+  width: 2rem;
+  height: 0.2rem;
+  rotate: 135deg;
 }
 
 
@@ -96,7 +275,50 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: transparent;
 }
+
+.btnsCont button{
+  color: white;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  font-size: 30px;
+  font-family: "kanit-med";
+  font-weight: 500;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+  border: 1.8px solid white;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.btnsNos button{
+  margin-right: 1rem;
+}
+
+.btnsEllos button{
+  margin-left: 1rem;
+}
+
+.button-add button{
+  background: rgba(83, 248, 97, 0.858);
+}
+
+.button-subst button{
+  background: rgba(255, 62, 62, 0.696);
+}
+
+.btnsCont .button-add{
+  padding-bottom: 1rem;
+}
+
+
 
 
 
@@ -119,10 +341,44 @@ body{
   background-color: #fff;
   padding: 20px;
   text-align: center;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.btnsPopUpContainer{
+  display:flex;
+  justify-content: center;
+  height: 5rem;
+}
+
+.btnPopUp{
+  width: 4rem;
+  height: 4rem;
+  text-align: center;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 
 #closeBtn {
-  margin-top: 10px;
+  background: rgb(217, 103, 61);
+  color: whitesmoke;
+  margin-left: 5px;
+}
+
+#minBtn{
+  background: white;
+  color: rgb(31, 157, 199);
+}
+
+#closeBtn:hover, #minBtn:hover{
+  background: rgb(31, 73, 199);
+  color: whitesmoke;
 }
 
 .hidden {
@@ -131,14 +387,18 @@ body{
 
 
 
+
+
+
 /*5.1- Btn Menu*/
-#btnMenuContainer{
+#btnMenu{
   position: fixed;
   bottom: 20px;
+  margin: 10px;
   right: 20px;
   width: 60px;
   height: 60px;
-  background-color: #25d366;
+  background-color: lightblue;
   color: #fff;
   border-radius: 50%;
   text-align: center;
@@ -146,3 +406,69 @@ body{
   box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
   z-index: 100;
 }
+
+#btnMenu img{
+  width: 90%;
+  height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+/*6- Responsive Design*/
+@media screen and (max-width: 420px){
+  .container{
+    max-width: 300px;
+    max-height: 800px;
+  }
+
+  .head-container{
+    height: 20px;
+    font-size: 10px;
+    margin-top: 10px;
+  }
+
+  .head-container img{
+    height: 50px;
+  }
+
+  .app-container{
+    max-height: 700px;
+  }
+
+  .countnos, .countellos{
+    max-width: 110px;
+  }
+
+  .btnsNos button{
+    margin-right: 5px;
+  }
+  
+  .btnsEllos button{
+    margin-left:  5px;
+  }
+  
+  h4{
+    font-size: 15px;
+  }
+
+  .btnsCont button{
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+    font-weight: 500;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+    border: 1.8px solid white;
+  }
+}
+
+
+
+
+

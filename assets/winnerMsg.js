@@ -2,7 +2,7 @@ import {resetCount} from "./countScript.js";
 const winMsgCont = document.getElementById("popup");
 const closeBtn = document.getElementById("closeBtn");
 const minBtn = document.getElementById("minBtn");
-const btnMenu = document.getElementById("btnMenuContainer");
+const btnMenu = document.getElementById("btnMenu");
 
 export const winMsg = (who) =>{
   winMsgCont.classList.remove("hidden");

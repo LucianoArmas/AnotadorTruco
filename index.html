@@ -4,12 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/styles/styles.css">
+  <link rel="shortcut icon" href="./img/trucoBlancas.ico" type="image/x-icon">
   <title>Anotador Truco</title>
 </head>
 <body>
   <div class="container">
     <div class="head-container">
-      <h2>Anotador Truco</h2>
+      <h2>Anotador Truco</h2> <img src="./img/trucoBlancas.ico"> 
     </div>
 
     <div class="app-container">
@@ -19,14 +20,16 @@
       </div>
       <div class="nosotros-container">
         <h4>Nosotros</h4>
-        <div>
-          <svg class="countnos"></svg>
+        <div class="countnos">
+          <svg class="countnos15"></svg>
+          <svg class="countnos30"></svg>
         </div>
       </div>
       <div class="ellos-container">
         <h4>Ellos</h4>
-        <div>
-          <svg class="countellos"></svg>
+        <div class="countellos">
+          <svg class="countellos15"></svg>
+          <svg class="countellos30"></svg>
         </div>
       </div>
       <div class="btnsEllos btnsCont">
@@ -38,12 +41,14 @@
     <div id="popup" class="hidden">
       <div id="popupContent">
         <h2 class="msg"></h2>
-        <button id="minBtn" class="btnPopUp min">Ver puntos</button>
-        <button id="closeBtn" class="btnPopUp close">Jugar de nuevo</button>
+        <div class="btnsPopUpContainer">
+          <button id="minBtn" class="btnPopUp min">Ver puntos</button>
+          <button id="closeBtn" class="btnPopUp close">Jugar de nuevo</button>
+        </div>
       </div>
     </div>
-    <div id="btnMenuContainer" class="hidden">
-      <button id="btnMenu">XD</button>
+    <div id="btnMenuContainer" >
+      <button id="btnMenu" class="hidden"><img src="./img/menu.png" alt="menu"></button>
     </div>
   </div>
 
