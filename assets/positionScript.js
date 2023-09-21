@@ -60,6 +60,7 @@ export const addPointEllos = (count)=>{
 }
 
 
+
 export const subsPointNos = (count)=>{
   const grupoN = document.getElementById(`nos${count}`);
   grupoN.remove();
