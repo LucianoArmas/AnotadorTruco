@@ -68,11 +68,17 @@
             </svg>
         </a>
     </div>
-    <p style="text-align: center;" class="opacity-50">&copy; 2023 Luciano Armas</p>
+    <p id="copy" style="text-align: center;" class="opacity-50"></p>
 </footer>
 </div>
 
 <script src="assets/btnScript.js" type="module"></script>
+<script>
+  let copy = document.getElementById("copy");
+  let currentYear = new Date().getFullYear();
+
+  copy.innerHTML = `&copy; ${currentYear} Luciano Armas`
+</script>
 
 </body>
 </html>
