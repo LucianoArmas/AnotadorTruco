@@ -859,6 +859,12 @@ h4{
   -ms-transform: translate(25%,0.5%);
   -o-transform: translate(25%,0.5%);
 }
+
+footer p{
+  font-size: 12px;
+}
+
+
 }
 
 
